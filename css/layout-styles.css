@@ -1,0 +1,107 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Header */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar {
+    background-color: #376FFF;
+}
+
+.container-nav {
+    width: 90%;
+    margin: 20px auto;
+}
+
+li>.nav-link:hover {
+    background-color: #fdfdfd;
+    color: #376FFF !important;
+    .link-actived {
+        border-bottom: none;
+    }
+}
+
+.navbar-brand {
+    color: rgb(0, 0, 0);
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: white !important;
+    background-color: #376FFF !important;
+
+    .brand2 {
+        color: rgb(0, 0, 0)
+    }
+
+}
+
+.brand2 {
+    color: white;
+}
+
+.link-actived {
+    border-bottom: white 2px solid;
+}
+
+
+/*Footer styles*/
+.brand-footer {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.brand-add {
+    color: rgb(230, 196, 25);
+}
+
+.links {
+    width: 100%;
+}
+
+footer {
+    border: 1px solid white;
+}
+
+.link {
+    width: 100%;
+
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+    #navbarNavDropdown {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar-toggler-icon {
+        color: rebeccapurple;
+    }
+
+}
+
+ /*Samsum Galaxy A51/71*/
+ @media screen and (max-width: 412px)and (max-height:914px) {
+    footer .col{
+        margin-top: 20px;
+    }
+    nav a{
+       font-size: 13px; 
+    }
+ }
