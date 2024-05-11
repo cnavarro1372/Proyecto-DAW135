@@ -93,7 +93,53 @@ footer {
     .navbar-toggler-icon {
         color: rebeccapurple;
     }
+    
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: -50px;
+    }
 
+    #logoImg {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -10px;
+        margin-top: -15px;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        margin-top: 30px;
+        margin-right: -10px;
+    }
+
+    .brand2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: -10px;
+    }
+
+    #brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 0px;
+    }
+
+    .navbar {
+        margin-top: -30px;
+    }
+
+    .navbar-nav {
+        margin-top: 20px;
+    }
+
+    .main {
+        margin-bottom: 60px;
+        margin-top: 0px;
+    }
 }
 
  /*Samsum Galaxy A51/71*/
@@ -101,7 +147,54 @@ footer {
     footer .col{
         margin-top: 20px;
     }
+
     nav a{
        font-size: 13px; 
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: -50px;
+    }
+
+    #logoImg {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -10px;
+        margin-top: -15px;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        margin-top: 30px;
+        margin-right: -10px;
+    }
+
+    .brand2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: -10px;
+    }
+
+    #brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 0px;
+    }
+
+    .navbar {
+        margin-top: -30px;
+    }
+
+    .navbar-nav {
+        margin-top: 20px;
+    }
+
+    .main {
+        margin-bottom: 100px;
     }
  }
