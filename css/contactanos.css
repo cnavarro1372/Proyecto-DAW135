@@ -1,0 +1,63 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container-nav { 
+    padding: 0 200px;
+}
+.brand {
+    display: inline-block;
+    margin-left: 100px;
+}
+.navbar-nav .nav-link {
+    color: #376fff;
+}
+main {
+    padding: 10px;
+}
+.contacto-form {
+    background-color: #376fff;
+    padding: 70px;
+    border-radius: 20px;
+    color: #fff;
+}
+.contacto-form-h2 {
+    text-align: left;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.contacto-form .btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: 100%;
+    color: #376fff;
+}
+.contacto-form .form-label {
+    font-weight: bold;
+}
+.contacto-form .form-control{
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.contacto-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contacto-info .info-box{
+    border: 12px solid #376fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    text-align: center;
+}
+.info-box p{
+    margin: 10px 0;
+}
+
+
+
+
