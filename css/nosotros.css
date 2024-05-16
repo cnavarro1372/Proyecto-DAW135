@@ -1,0 +1,123 @@
+
+/* Estilos CSS para el contenido principal */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.portada-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.portada {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.portada:hover {
+    transform: scale(1.1);
+}
+
+.titulo-destacado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contenido {
+    margin-top: 40px;
+}
+
+.valores {
+    margin-top: 40px;
+}
+
+.valores h3 {
+    color: #007bff;
+}
+
+.valores ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.valores li {
+    margin-bottom: 10px;
+}
+
+.icono {
+    margin-right: 10px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.mision, .vision {
+    flex-basis: 48%;
+}
+
+.mision h3, .vision h3 {
+    color: #007bff;
+}
+
+.mision p, .vision p {
+    line-height: 1.6;
+}
+
+
+
+a:hover {
+    color: #0056b3;
+}
+/* Estilos para las tarjetas de misión y visión */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.mision {
+    border-color: #007bff;
+}
+
+.vision {
+    border-color: #28a745;
+}
+
+.mision h3, .vision h3 {
+    color: #007bff;
+}
+
+.mision p, .vision p {
+    color: #333;
+}
