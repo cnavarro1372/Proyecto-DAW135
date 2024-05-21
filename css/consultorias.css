@@ -41,7 +41,6 @@
 }
 
 .title {
-
   font-size: 25px;
 }
 
@@ -169,6 +168,18 @@ h2 {
   background-color: white;
 }
 
+.ind:hover{
+  p{
+    color: #000000;
+    font-weight: bold;
+  }
+  h2{
+    color: rgb(255, 188, 31);
+    
+  }
+ 
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -190,7 +201,7 @@ h2 {
 
   }
 
-  #QueHacemos {
+  #PorqueNosotros {
     margin-top: 150px;
 
   }
@@ -274,7 +285,7 @@ h2 {
     font-size: 15px;
     font-weight: bold;
   }
-  #QueHacemos{
+  #PorqueNosotros{
     width: 90%;
   }
 }
