@@ -1,63 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la pagina */
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.container-nav { 
-    padding: 0 200px;
-}
-.brand {
-    display: inline-block;
-    margin-left: 100px;
-}
-.navbar-nav .nav-link {
-    color: #376fff;
-}
-main {
-    padding: 10px;
-}
-.contacto-form {
-    background-color: #376fff;
-    padding: 70px;
-    border-radius: 20px;
-    color: #fff;
-}
-.contacto-form-h2 {
-    text-align: left;
-    font-size: 34px;
-    margin-bottom: 30px;
-}
-.contacto-form .btn {
-    background-color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-weight: bold;
-    width: 100%;
-    color: #376fff;
-}
-.contacto-form .form-label {
-    font-weight: bold;
-}
-.contacto-form .form-control{
-    border-radius: 20px;
-    margin-bottom: 25px;
-}
-.contacto-info {
+    background-color: white;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
-.contacto-info .info-box{
-    border: 12px solid #376fff;
-    padding: 30px;
-    border-radius: 20px;
-    width: 80%;
-    text-align: center;
-}
-.info-box p{
-    margin: 10px 0;
+
+header {
+    width: 100%;
 }
 
+footer {
+    width: 100%;
+}
 
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    width: 100%;
+    flex-grow: 1;
+}
 
+.form-section {
+    width: 60%;
+}
 
+.info-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-content {
+    background: #376fff;
+    padding: 50px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+/* Formato encabezado */
+.form-content h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* Ordenamiento del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Color y formato de los labels */
+label {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Color y formato de areas de texto */
+input, textarea {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Formato del boton */
+.btn {
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #fff;
+    color: #376fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+/*Espacio entre divs*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+/*Formato de divs*/
+.info-box {
+    border: 2px solid #376fff;
+    padding: 10px;
+    border-radius: 10px; 
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+}
+
+/* Responsividad */
+@media(max-width:991px) {
+    body {
+        flex-direction: column;
+    }
+    .form-section, .info-section {
+        width: 100%;
+    }
+    .info-section {
+        margin-top: 20px;
+    }
+}

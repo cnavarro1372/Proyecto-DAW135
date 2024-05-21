@@ -72,35 +72,59 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section id="contacto" class="container mt-5">
-            <div class="row">
-                <div class="col-md-6 contacto-form">
-                    <!--Encabezado-->
-            <h2>CONTACTANOS</h2>
-            <!--Formulario-->
-        <form>
-            <!--Campo de nombre-->
-            <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="Juan Perez">
+    <main class="mt-5 mb-5">
+        <section>
+            <div class="form-content">
+                <!--Encabezado-->
+                <h2>CONTACTANOS</h2>
+                <!--Formulario-->
+                <form>
+                    <!--Nombre-->
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+                    <!--Correo-->
+                    <label for="email">Correo electronico</label>
+                    <input type="email" name="email" id="email">
+                    <!--Asunto-->
+                    <label for="subject">Asunto</label>
+                    <input type="text" name="subject" id="subject">
+                    <!--Comentarios-->
+                    <label for="coments">Comentarios (Opcional)</label>
+                    <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                    <button class="btn" name="btn" id="btn">Enviar</button>
+                </form>
             </div>
-            <!--Campo de correo-->
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo electrònico</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="wm24@gmail.com">
+        </section>
+        <section class="info-section">
+            <div class="grid-container">
+                 <!--DIV con la informaciòn de los alumnos (para mientras todos tienen la mia)-->
+            <div class="info-box">
+                <p><strong>Nombre: </strong>Wendy Carolina Mejìa Martìnez</p>
+                <p><strong>Carnet: </strong>MM18069</p>
+                <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
             </div>
-            <!--Campo de texto opcional-->
-            <div class="mb-3">
-                <label for="message" class="form-label">Comentario(Opcional)</label>
-                <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Me gustan sus cursos"></textarea>
+            <div class="info-box">
+                <p><strong>Nombre: </strong>Wendy Carolina Mejìa Martìnez</p>
+                <p><strong>Carnet: </strong>MM18069</p>
+                <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
             </div>
-                <!--Boton de enviar-->
-                <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+            <div class="info-box">
+                <p><strong>Nombre: </strong>Wendy Carolina Mejìa Martìnez</p>
+                <p><strong>Carnet: </strong>MM18069</p>
+                <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+            </div>
+            <div class="info-box">
+                <p><strong>Nombre: </strong>Wendy Carolina Mejìa Martìnez</p>
+                <p><strong>Carnet: </strong>MM18069</p>
+                <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+            </div>
+            <div class="info-box">
+                <p><strong>Nombre: </strong>Wendy Carolina Mejìa Martìnez</p>
+                <p><strong>Carnet: </strong>MM18069</p>
+                <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+            </div>
+            </div>
 
-                </div>
-            </div>
         </section>
     </main>
     <footer class="bg-dark text-white mt-5 p-5 ">
