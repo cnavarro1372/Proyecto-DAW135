@@ -1,40 +1,43 @@
+/* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fijar header */
+header {
+	height: 80px;
+	width: 100%;
+	left: 0;
+	top: 0;
+    position: fixed;
+}
+
 /* Cuerpo de la pagina */
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-header {
-    width: 100%;
-}
-
-footer {
-    width: 100%;
-}
-
 main {
     display: flex;
     justify-content: space-between;
-    padding: 50px 20px;
+    padding: 100px;
     width: 100%;
     flex-grow: 1;
 }
-
+/* Ajuste para reducir el espacio del formulario*/
 .form-section {
-    width: 60%;
-}
-
-.info-section {
     width: 35%;
+    margin-right: 0px;
+}
+/* Ajuste para reducir el espacio para los divs*/
+.info-section {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -42,7 +45,7 @@ main {
 
 .form-content {
     background: #376fff;
-    padding: 50px;
+    padding: 20px;
     border-radius: 25px;
     width: 100%;
 }
@@ -85,31 +88,36 @@ input, textarea {
 .btn {
     font-size: 20px;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     background-color: #fff;
     color: #376fff;
     padding: 10px;
     border-radius: 10px;
+    align-self: center;
 }
-/*Espacio entre divs*/
+
+/* Espacio entre divs */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    width: 100%;
+    /*Creacion de columnas*/
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    width: 90%;
 }
-/*Formato de divs*/
+
+/* Formato de divs */
 .info-box {
-    border: 2px solid #376fff;
-    padding: 10px;
-    border-radius: 10px; 
+    border: 5px solid #376fff;
+    padding: 20px;
+    border-radius: 30px;
     background-color: #fff;
     color: #000;
     width: 100%;
+    box-sizing:content-box;
 }
 
 /* Responsividad */
-@media(max-width:991px) {
+@media (max-width: 991px) {
     body {
         flex-direction: column;
     }
@@ -119,4 +127,8 @@ input, textarea {
     .info-section {
         margin-top: 20px;
     }
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
 }
+
