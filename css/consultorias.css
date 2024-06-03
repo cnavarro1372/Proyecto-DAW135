@@ -11,48 +11,94 @@
   position: relative;
   display: inline-block;
   text-align: center;
+}
 
-
+.navbar{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+main{
+  position: relative;
+  
 }
 
 .img-container {
   position: relative;
   margin-bottom: 100px;
+  top:110px;
+  
 }
+
+.img-container:hover .header-image {
+  opacity: 0.7;
+  color:#376FFF;
+  cursor: pointer;
+}
+.container:hover .overlay {
+  opacity: 0.5;
+  color:#376FFF;
+  
+
+}
+
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(104, 101, 101);
+}
+
+
 
 .img-container p {
   position: absolute;
   top: 55%;
-  left: 43%;
+  left: 42%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 0);
   font-weight: bolder;
   font-size: 40px;
+  display: flex;
+  justify-content: center;
 
 }
 
 .description {
   width: 60%;
   margin: auto;
-
   font-weight: bolder;
   text-align: center;
   color: #000000;
+  margin-top: 200px;
 }
 
 .title {
   font-size: 25px;
 }
-
+.title1, .individual{
+  color: #376FFF;
+}
 .paragraph {
   padding: 10px;
+  margin: 30px;
+  text-align: center;
 }
 
 .companies-container {
   width: 100%;
   margin: 100px auto;
   padding: 20px;
-  background-color: rgb(255, 255, 0);
+  background-color: #376FFF;
 }
 
 .companies {
@@ -62,16 +108,19 @@
 
 .card-body {
   height: 300px;
-  background-color: rgb(255, 255, 0);
+  background-color: #376FFF;
 }
 
 .animation:hover {
   background-color: white;
+  .card-title{
+    color: #376FFF;
+  }
 }
 
 .title-section {
   font-size: 30px;
-  color: rgb(0, 100, 0);
+
   font-weight: bolder;
   width: 100%;
   margin-top: 30px;
@@ -79,7 +128,9 @@
   text-transform: uppercase;
 
 }
-
+.business{
+  color: white;
+}
 .content-personal .paragraph {
   width: 75%;
   margin: 30px auto;
@@ -94,7 +145,7 @@
 
 .accordion-p {
   background-color: #000000;
-  color: rgb(230, 196, 25);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -107,8 +158,10 @@
 
 .active,
 .accordion-p:hover {
-  background-color: rgb(230, 196, 25);
+  background-color:#376FFF ;
   color: black;
+
+  
 }
 
 .panel {
@@ -116,6 +169,10 @@
   background-color: white;
   display: none;
   overflow: hidden;
+}
+.panel:hover{
+  font-weight: bold;
+  
 }
 
 .container-experience {
@@ -137,19 +194,19 @@
 h2 {
   font-weight: bolder;
   padding: 5px;
-  color: rgb(0, 100, 0);
+  color: #376FFF;
 }
 
 .contact {
   width: 100%;
-  background-color: rgb(0, 100, 0);
-  color: white;
+  background-color: #376FFF;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 80px;
+
 }
 
 .contact a {
@@ -157,7 +214,8 @@ h2 {
   padding: 10px;
   color: white;
   text-decoration: none;
-  background-color: black;
+  background-color: #376FFF;
+  border-radius: 15px;
 }
 
 .contact a:hover {
@@ -185,7 +243,7 @@ h2 {
 @media screen and (max-width: 1000px) {
   #writer {
     font-size: 20px;
-    color: black;
+    color: rgb(48, 46, 46);
   }
 
   .img-container {
@@ -231,10 +289,12 @@ h2 {
 }
 
 /*Nest Hub Max*/
-@media screen and (max-width: 128px)and (max-height:800px) {
+@media screen and (max-width: 1280px)and (max-height:800px) {
   .card-body {
-    height: 325px;
+    height: 350px;
+   
   }
+  
 }
 /*NestHub*/
 @media screen and (max-width: 1024px)and (max-height:600px) {
@@ -275,6 +335,16 @@ h2 {
   }
   .card-body {
     height: 230px;
+  }
+  .img-container{
+    top:80px;
+  }
+  .description{
+    margin-top: 230px;
+  }
+  .paragraph{
+    margin: 30px 0;
+    padding: 0;
   }
   .companies {
     width: 95%;
