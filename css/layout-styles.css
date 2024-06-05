@@ -2,11 +2,17 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/*Header */
 .navbar-brand {
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 25px;
+    justify-content: center; /* Añadido para centrar horizontalmente */
 }
+
+#brand {
+    margin-left: 15px; /* Añadido para separar el texto del logo */
+}
+
 
 .navbar {
     background-color: #376FFF;
@@ -23,10 +29,6 @@ li>.nav-link:hover {
     .link-actived {
         border-bottom: none;
     }
-}
-
-.navbar-brand {
-    color: rgb(0, 0, 0);
 }
 
 .nav-link {
