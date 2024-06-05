@@ -6,11 +6,11 @@
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 25px;
-    justify-content: center; /* Añadido para centrar horizontalmente */
+    justify-content: center; 
 }
 
 #brand {
-    margin-left: 15px; /* Añadido para separar el texto del logo */
+    margin-left: 15px; 
 }
 
 
