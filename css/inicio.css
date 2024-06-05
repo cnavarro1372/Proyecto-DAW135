@@ -44,3 +44,53 @@
     color: #007bff;
 }
 
+@media screen and (max-width: 1000px) {
+    .container {
+        margin-top: 2em;
+        flex-direction: column;
+        width: 70vw;
+    }
+
+    .slider {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .text-container {
+        width: 100%;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+    .titulo{
+        font-size: 1.3em;
+    }
+    .subtitulo{
+        font-size: 1.3em;
+    }
+}
+
+/* ipad pro */
+@media screen and (min-width: 1024px) and (min-height:1366px) {
+    .container {
+        margin-top: 2em;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .slider {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .text-container {
+        width: 100%;
+        font-size: 2em;
+        margin-top: 20px;
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    .subtitulo{
+        font-size: 2em;
+    }
+}
