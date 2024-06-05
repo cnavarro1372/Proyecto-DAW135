@@ -71,20 +71,24 @@
                 <!-- Encabezado -->
                 <h2>CONTACTANOS</h2>
                 <!-- Formulario -->
-                <form>
+                <form id="form" action="https://formsubmit.co/mm18069@ues.edu.sv" method="POST">
                     <!-- Nombre -->
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="from_name" id="from_name">
                     <!-- Correo -->
                     <label for="email">Correo electrónico</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email_id" id="email_id">
                     <!-- Asunto -->
-                    <label for="subject">Asunto</label>
-                    <input type="text" name="subject" id="subject">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto" id="asunto_id">
                     <!-- Comentarios -->
                     <label for="comments">Comentarios (Opcional)</label>
-                    <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
-                    <button class="btn" name="btn" id="btn">Enviar</button>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    <!-- Boton de enviar -->
+                    <input type="submit" class="btn" value="Enviar">
+                    <!-- Evitar captcha y redireccionamiento a la pagina de contactanos -->
+                    <input type="hidden" name="_next" value="http://localhost:5500/html/contactanos.html">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
         </section>
@@ -92,33 +96,57 @@
             <div class="grid-container">
                 <!-- DIV con la información de los alumnos (por ahora todos tienen la misma) -->
                 <div class="info-box">
-                    <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
-                    <p><strong>Carnet: </strong>MM18069</p>
-                    <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    <div class="info-text">
+                        <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
+                        <p><strong>Carnet: </strong>MM18069</p>
+                     <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    </div>
+                    <div class="info-image">
+                        <img src="images/contactanos/iloveimg-converted/WendyIA.jpg">
+                    </div>
                 </div>
                 <div class="info-box">
-                    <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
-                    <p><strong>Carnet: </strong>MM18069</p>
-                    <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    <div class="info-text">
+                        <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
+                        <p><strong>Carnet: </strong>MM18069</p>
+                     <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    </div>
+                    <div class="info-image">
+                        <img src="images/contactanos/iloveimg-converted/FranklinIA.jpg">
+                    </div>
                 </div>
                 <div class="info-box">
-                    <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
-                    <p><strong>Carnet: </strong>MM18069</p>
-                    <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    <div class="info-text">
+                        <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
+                        <p><strong>Carnet: </strong>MM18069</p>
+                     <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    </div>
+                    <div class="info-image">
+                        <img src="images/contactanos/iloveimg-converted/DarwinIA.jpg">
+                    </div>
                 </div>
                 <div class="info-box">
-                    <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
-                    <p><strong>Carnet: </strong>MM18069</p>
-                    <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    <div class="info-text">
+                        <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
+                        <p><strong>Carnet: </strong>MM18069</p>
+                     <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    </div>
+                    <div class="info-image">
+                        <img src="images/contactanos/iloveimg-converted/CristianIA.jpg">
+                    </div>
                 </div>
                 <div class="info-box">
-                    <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
-                    <p><strong>Carnet: </strong>MM18069</p>
-                    <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    <div class="info-text">
+                        <p><strong>Nombre: </strong>Wendy Carolina Mejía Martínez</p>
+                        <p><strong>Carnet: </strong>MM18069</p>
+                     <p><strong>Correo: </strong>mm18069@ues.edu.sv</p>
+                    </div>
+                    <div class="info-image">
+                        <img src="images/contactanos/iloveimg-converted/AlfredoIA.jpg">
+                    </div>
                 </div>
             </div>
         </section>
-        <!--Uso del chat recomendado en proyecto tawk.to-->
     </main>
     <footer class="bg-dark text-white mt-5 p-5 ">
         <div class="container ">
