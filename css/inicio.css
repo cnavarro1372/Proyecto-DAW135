@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+}
+
+.slider {
+    width: 60%;
+    height: auto;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .slider--inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider .slide img {
+    width: 100%;
+    display: block;
+}
+
+.text-container {
+    width: 35%;
+}
+
+.text-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.2em;
+}
