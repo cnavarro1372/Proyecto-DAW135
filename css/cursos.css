@@ -13,10 +13,21 @@
   margin: auto;
 }
 
+.mb-5 {
+  position: relative;
+  top: 0%;
+}
+
 .card {
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  height: 95%;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
@@ -54,8 +65,8 @@ main {
   }
 
   .card-body {
-    height: 550px;
-  }
+      height: 550px;
+    }
 }
 
 /*Nest Hub Max*/
