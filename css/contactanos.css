@@ -7,11 +7,13 @@
 
 /* Fijar header */
 header {
-	height: 80px;
-	width: 100%;
-	left: 0;
-	top: 0;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
     position: fixed;
+    background-color: #fff; 
+    z-index: 1000; 
 }
 
 /* Cuerpo de la pagina */
@@ -21,33 +23,38 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 80px; 
 }
 
 main {
     display: flex;
     justify-content: space-between;
-    padding: 80px;
+    padding: 20px;
     width: 100%;
     flex-grow: 1;
-    
+    flex-wrap: wrap;
 }
 
 footer {
-    margin-top:auto;
-    padding: 5px;
-    
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
 }
-/* Ajuste para reducir el espacio del formulario*/
+
+/* Ajuste para reducir el espacio del formulario */
 .form-section {
     width: 35%;
-    margin-right: 0px;
+    margin-right: 20px;
+    flex: 1;
 }
-/* Ajuste para reducir el espacio para los divs*/
+
+/* Ajuste para reducir el espacio para los divs */
 .info-section {
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 2;
 }
 
 .form-content {
@@ -60,7 +67,7 @@ footer {
 /* Formato encabezado */
 .form-content h2 {
     color: #fff;
-    font-size: 40px;
+    font-size: 2rem;
     margin-bottom: 25px;
 }
 
@@ -74,14 +81,14 @@ form {
 
 /* Color y formato de los labels */
 label {
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #fff;
     margin-bottom: 10px;
 }
 
 /* Color y formato de areas de texto */
 input, textarea {
-    font-size: 20px;
+    font-size: 1rem;
     margin-bottom: 20px;
     width: 100%;
     padding: 10px;
@@ -93,7 +100,7 @@ input, textarea {
 
 /* Formato del boton */
 .btn {
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
     width: 50%;
     background-color: #fff;
@@ -106,10 +113,9 @@ input, textarea {
 /* Espacio entre divs */
 .grid-container {
     display: grid;
-    /*Creacion de columnas*/
     grid-template-columns: 1fr 1fr;
-    gap: 90px;
-    width: 90%;
+    gap: 20px;
+    width: 100%;
 }
 
 /* Formato de divs */
@@ -117,60 +123,73 @@ input, textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid #376fff;
+    border: 2px solid #376fff;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: #fff;
     width: 100%;
     box-sizing: border-box;
 }
+
 /* Formato de texto de los divs */
 .info-text {
     color: #000;
-    font-size: small;
+    font-size: 1rem;
     text-align: left;
     flex: 1;
 }
+
 /* Formato de div de imagen */
 .info-image {
     margin-left: 20px;
     display: flex;
     align-items: center;
 }
+
 /* Formato de la imagen */
 .info-image img {
     max-width: 100px;
     height: auto;
     border-radius: 50%;
 }
-/* Estilo del boton de WhatsApp*/
-.float-wa{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
+
+/* Estilo del boton de WhatsApp */
+.float-wa {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
 }
 
 /* Responsividad */
 @media (max-width: 991px) {
-    body {
+    main {
         flex-direction: column;
+        padding: 20px;
     }
+
     .form-section, .info-section {
         width: 100%;
+        margin-right: 0;
     }
-    .info-section {
-        margin-top: 20px;
+
+    .form-section {
+        margin-bottom: 20px;
     }
-    /* Una columna en pantallas pequeñas */
+
     .grid-container {
         grid-template-columns: 1fr;
     }
 }
+
+/*Mensaje de envio con exito del formulario*/
+.success_message {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
