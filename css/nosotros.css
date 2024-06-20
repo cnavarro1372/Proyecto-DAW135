@@ -2,7 +2,16 @@
 .card:hover h3 {
     text-decoration: underline;
 }
-
+/* Fijar header */
+header {
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: #fff; 
+    z-index: 1000; 
+}
 /* Estilos CSS para el contenido principal */
 body {
     margin: 0;
@@ -309,7 +318,20 @@ a:hover {
     border-radius: 10px; /* Opcional: Añade bordes redondeados */
     background-color: white; /* Opcional: Añade un fondo blanco para destacar la imagen */
 }
-
+/* Estilo del boton de WhatsApp */
+.float-wa {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
 /* Media Queries para asegurar el diseño responsivo */
 @media (max-width: 1200px) {
     .container {
