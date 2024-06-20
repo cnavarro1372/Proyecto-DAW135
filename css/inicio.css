@@ -2,6 +2,10 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body{
+    padding-top: 130px;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -23,6 +27,7 @@
     transition: transform 0.5s ease-in-out;
 }
 
+
 .slider .slide {
     min-width: 100%;
     box-sizing: border-box;
@@ -42,6 +47,44 @@
 
 .text-container .titulo {
     color: #007bff;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.reason-cards {
+    margin-top: 2rem;
+}
+
+.reason-cards .card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.reason-cards .card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.reason-cards .card .card-body {
+    padding: 2rem;
+}
+
+.reason-cards .card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.reason-cards .card .fa {
+    color: #007bff;
+}
+
+section{
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -66,6 +109,12 @@
     }
     .subtitulo{
         font-size: 1.3em;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
     }
 }
 
