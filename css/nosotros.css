@@ -1,4 +1,3 @@
-/* Estilos adicionales para subrayar los títulos al pasar el cursor sobre la card */
 .card:hover h3 {
     text-decoration: underline;
 }
@@ -33,7 +32,7 @@ body {
 .portada-container {
     width: 100%;
     margin: 0;
-    padding: 0; /* Asegúrate de que el padding no afecte otros elementos */
+    padding: 0; 
     position: relative;
     overflow: hidden;
 }
@@ -42,7 +41,7 @@ body {
 .portada {
     width: 100%;
     height: 700px;
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+    object-fit: cover; 
     background-position: center;
     background-size: cover;
     position: relative;
@@ -146,9 +145,6 @@ a:hover {
     color: #555;
 }
 
-/* Secciones adicionales */
-.testimonios, 
-.premios-reconocimientos, 
 .eventos-actividades, 
 .becas-financiamiento, 
 .impacto-social {
@@ -156,32 +152,14 @@ a:hover {
 }
 
 /* Títulos de las secciones */
-.testimonios h3, 
-.premios-reconocimientos h3, 
 .eventos-actividades h3, 
 .becas-financiamiento h3, 
 .impacto-social h3 {
     color: #007bff;
     margin-bottom: 20px;
-    font-size: 2em;
-    text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
     padding-bottom: 5px;
-}
-
-/* Configuración de las cards en .testimonios y .eventos-actividades */
-.testimonios .card {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    border-radius: 30px;
-    border: none;
-    border-left: 4px solid #28a745;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 20px;
-    color: #555;
-    
 }
 
 .eventos-actividades .card {
@@ -196,46 +174,28 @@ a:hover {
     color: #555;
 }
 
-.testimonios .card:hover, 
+
 .eventos-actividades .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
 
-/* Configuración específica para las cards en .premios-reconocimientos */
-.premios-reconocimientos .card {
-    background: linear-gradient(135deg, #ffffff, #e3f2fd);
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 20px;
-    color: #555;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    border-radius: 30px;
+
+.card-body .card-title {
+    color: #007bff;
     border-left: 4px solid #28a745;
-    max-width: 400px; /* Control de ancho */
+    padding-left: 10px; 
 }
 
-.ppremios-reconocimientos .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
-}
 
-/* Hover effect for list items in premios-reconocimientos */
-.premios-reconocimientos li:hover h3, 
-.premios-reconocimientos li:hover p {
-    color: #fff;
-}
-/* Flexbox container */
+
 .contenedor {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-top: 40px;
 }
-/* Estilos para resaltar las listas */
+
 .impacto-social .card, .becas-financiamiento .card {
     line-height: 1.8;
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
@@ -247,7 +207,7 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:left;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 4px solid #007bff;
@@ -258,7 +218,7 @@ a:hover {
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para las tarjetas dentro de la sección contenido */
+
 .contenido .card {
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     border: none;
@@ -296,28 +256,8 @@ a:hover {
 .card:hover p {
     color: #fff;
 }
-/* Nueva clase para la imagen del premio */
-.img {
-    display: block;
-    align-items: center;
-    width: 100px;
-    height: auto;
-    margin-left: 320px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave */
-    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
-    margin: 10px auto;
-}
 
-.img.expanded {
-    transform: translate(-50%, -50%) scale(3); /* Ajusta la posición y escala */
-    z-index: 1000; /* Asegúrate de que la imagen ampliada esté sobre otros elementos */
-    position: fixed; /* Usa posición fija para mantener la imagen en su lugar durante el scroll */
-    left: 50%; /* Centra la imagen horizontalmente */
-    top: 50%; /* Centra la imagen verticalmente */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra para un efecto más destacado */
-    border-radius: 10px; /* Opcional: Añade bordes redondeados */
-    background-color: white; /* Opcional: Añade un fondo blanco para destacar la imagen */
-}
+
 /* Estilo del boton de WhatsApp */
 .float-wa {
     position: fixed;
@@ -332,6 +272,59 @@ a:hover {
     font-size: 30px;
     z-index: 100;
 }
+/* Estilos específicos para la clase tutores */
+.card-main {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    color: #555;
+    border-left: 4px solid #007bff;
+}
+
+.card-main:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    background: #007bff; 
+}
+
+.card-main h3 {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.card-main p {
+    color: #555;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+.card-main:hover h3,
+.card-main:hover p {
+    color: #fff; 
+}
+
+
+.tutores .card-tutor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    background: #000000; 
+}
+
+.tutores .card-tutor .card-title,
+.tutores .card-tutor .card-text {
+    color: #555; 
+    transition: color 0.3s ease;
+}
+
+.tutores .card-tutor:hover .card-title,
+.tutores .card-tutor:hover .card-text {
+    color: #fff; 
+}
+
 /* Media Queries para asegurar el diseño responsivo */
 @media (max-width: 1200px) {
     .container {
@@ -385,17 +378,8 @@ a:hover {
         font-size: 1.5em;
     }
 
-    .img {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .img.expanded {
-        left: 50%;
-        top: 50%;
-    }
 }
-/* Nueva media query para pantallas muy pequeñas */
+
 @media (max-width: 400px) {
     .container {
         padding: 0 10px;
@@ -409,17 +393,7 @@ a:hover {
         font-size: 1.2em;
     }
 
-    .img {
-        width: 80px;
-        margin: 10px auto; /* Centra la imagen horizontalmente */
-    }
-
-    .img.expanded {
-        transform: translate(-50%, -50%) scale(3); /* Ajusta la escala para pantallas más pequeñas */
-        left: 50%;
-        top: 50%;
-        width: auto; /* Asegura que la imagen mantenga la proporción al escalar */
-    }
+  
 
     .mision-vision {
         flex-direction: column;
