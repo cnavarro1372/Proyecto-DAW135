@@ -1,8 +1,8 @@
-*{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body{
+body {
     padding-top: 130px;
 }
 
@@ -48,11 +48,13 @@ body{
 .text-container .titulo {
     color: #007bff;
 }
+
 .section-title {
     font-size: 2.5rem;
     font-weight: bold;
     color: #333;
 }
+
 .quienes-somos-card {
     transition: box-shadow 0.3s ease-in-out;
 }
@@ -103,8 +105,29 @@ body{
     color: #007bff;
 }
 
-section{
-    margin-top: 10px;
+.service-card {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.service-card .card-body {
+    padding: 2rem;
+}
+
+.service-card .card-title {
+    margin-bottom: 1rem;
+}
+
+.service-card .btn {
+    width: 100%;
+}
+
+section {
+    margin-top: 3px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -124,10 +147,12 @@ section{
         font-size: 1em;
         margin-top: 20px;
     }
-    .titulo{
+
+    .titulo {
         font-size: 1.3em;
     }
-    .subtitulo{
+
+    .subtitulo {
         font-size: 1.3em;
     }
 
@@ -156,10 +181,12 @@ section{
         font-size: 2em;
         margin-top: 20px;
     }
-    .titulo{
+
+    .titulo {
         font-size: 2em;
     }
-    .subtitulo{
+
+    .subtitulo {
         font-size: 2em;
     }
 }
