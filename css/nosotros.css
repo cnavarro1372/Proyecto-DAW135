@@ -1,32 +1,52 @@
-/* Estilos adicionales para subrayar los títulos al pasar el cursor sobre la card */
 .card:hover h3 {
     text-decoration: underline;
 }
-
+/* Fijar header */
+header {
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: #fff; 
+    z-index: 1000; 
+}
 /* Estilos CSS para el contenido principal */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
     color: #333;
 }
 
+/* Contenedor principal */
 .container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 20px;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0 300px;
+   
+    
 }
 
+/* Contenedor de la portada */
 .portada-container {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
     position: relative;
     overflow: hidden;
 }
 
+/* Imagen de la portada */
 .portada {
     width: 100%;
-    height: auto;
+    height: 650px;
+    object-fit: cover; 
+    background-position: center;
+    background-size: cover;
+    position: relative;
     display: block;
+    text-align: center;
     transition: transform 0.5s ease;
 }
 
@@ -34,6 +54,7 @@ body {
     transform: scale(1.1);
 }
 
+/* Título destacado en la portada */
 .titulo-destacado {
     position: absolute;
     top: 50%;
@@ -44,10 +65,12 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+/* Contenido principal */
 .contenido {
     margin-top: 40px;
 }
 
+/* Misión y visión */
 .mision-vision {
     display: flex;
     justify-content: space-between;
@@ -71,11 +94,11 @@ a:hover {
     color: #0056b3;
 }
 
-/* Estilos para las tarjetas de misión, visión y valores */
+/* Tarjetas de misión, visión y valores */
 .card {
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     border: none;
-    border-radius: 12px;
+    border-radius: 30px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -102,8 +125,8 @@ a:hover {
 /* Estilos para centrar y cuadrar la tarjeta de valores */
 .valores.card {
     border-left: 4px solid #ffc107;
-    width: 48%;
-    height: 48%;
+    width: 35%;
+    height: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,72 +145,268 @@ a:hover {
     color: #555;
 }
 
-/* Estilos adicionales para las secciones testimonio, premios, eventos, becas e impacto */
-.testimonios, .premios-reconocimientos, .eventos-actividades, .becas-financiamiento, .impacto-social {
+.eventos-actividades, 
+.becas-financiamiento, 
+.impacto-social {
     margin-top: 40px;
 }
 
-.testimonios h3, .premios-reconocimientos h3, .eventos-actividades h3, .becas-financiamiento h3, .impacto-social h3 {
+/* Títulos de las secciones */
+.eventos-actividades h3, 
+.becas-financiamiento h3, 
+.impacto-social h3 {
     color: #007bff;
     margin-bottom: 20px;
-    font-size: 2em;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: 2px solid #007bff;
     display: inline-block;
     padding-bottom: 5px;
 }
 
-.testimonios .card, .eventos-actividades .card {
-    background: linear-gradient(135deg, #ffffff, #e3f2fd);
+.eventos-actividades .card {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 30px;
     border: none;
-    border-radius: 12px;
+    border-left: 4px solid #28a745;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    color: #555;
 }
 
-.testimonios .card:hover, .eventos-actividades .card:hover {
+
+.eventos-actividades .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
 
-.testimonios .card-body, .eventos-actividades .card-body {
+
+.card-body .card-title {
+    color: #007bff;
+    border-left: 4px solid #28a745;
+    padding-left: 10px; 
+}
+
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.impacto-social .card, .becas-financiamiento .card {
+    line-height: 1.8;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #007bff;
+}
+
+.impacto-social .card:hover, .becas-financiamiento .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+
+.contenido .card {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    border-left: 4px solid #007bff;
+}
+
+.contenido .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.contenido .card h3 {
+    color: #007bff;
+}
+
+.contenido .card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Estilo para cambiar el color de fondo y texto al pasar el cursor sobre las tarjetas */
+.card:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Asegurar que el texto dentro de las tarjetas también cambie a blanco */
+.card:hover h3,
+.card:hover p {
+    color: #fff;
+}
+
+
+/* Estilo del boton de WhatsApp */
+.float-wa {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+/* Estilos específicos para la clase tutores */
+.card-main {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
     color: #555;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
+    border-left: 4px solid #007bff;
 }
 
-.premios-reconocimientos ul {
-    list-style-type: none;
-    padding: 0;
+.card-main:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    background: #007bff; 
+}
+
+.card-main h3 {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.card-main p {
     color: #555;
-    font-size: 1.1em;
-}
-
-.premios-reconocimientos li {
-    margin-bottom: 10px;
     line-height: 1.8;
-    background: rgba(230, 230, 250, 0.8);
-    padding: 10px;
-    border-radius: 8px;
+    transition: color 0.3s ease;
 }
 
-.becas-financiamiento p, .impacto-social p {
-    line-height: 1.8;
-    color: #555;
-    font-size: 1.1em;
-    background: rgba(255, 248, 220, 0.8);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-  /* Estilos para resaltar las listas */
-  .impacto-social .card, .becas-financiamiento .card {
-    background: rgba(255, 248, 220, 0.8);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.card-main:hover h3,
+.card-main:hover p {
+    color: #fff; 
 }
 
+
+.tutores .card-tutor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    background: #000000; 
+}
+
+.tutores .card-tutor .card-title,
+.tutores .card-tutor .card-text {
+    color: #555; 
+    transition: color 0.3s ease;
+}
+
+.tutores .card-tutor:hover .card-title,
+.tutores .card-tutor:hover .card-text {
+    color: #fff; 
+}
+
+/* Media Queries para asegurar el diseño responsivo */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 100px;
+    }
+    
+    .mision-vision {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .mision, .vision {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .portada {
+        height: 500px;
+    }
+
+    .titulo-destacado {
+        font-size: 2em;
+    }
+
+    .valores.card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .portada {
+        height: 300px;
+    }
+
+    .titulo-destacado {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .portada {
+        height: 250px;
+    }
+
+    .titulo-destacado {
+        font-size: 1.2em;
+    }
+
+  
+
+    .mision-vision {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mision, .vision, .valores.card {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    .card {
+        padding: 10px;
+    }
+}
+   

@@ -18,16 +18,14 @@
     <link rel="stylesheet" href="/css/nosotros.css">
     <!--Font Awesome 4-->
     <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--Javascript-->
-    <script src="/js/nosotros.js"></script>
+    
 </head>
 
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid container-nav ">
+            <div class="container-fluid container-nav">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="/images/logo.png" alt="logo" id="logoImg">
                     <span id="brand">INNOVATECH<span class="brand2"> ACADEMY</span></span>
@@ -37,11 +35,10 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse  " id="navbarNavDropdown">
-                    <ul class="navbar-nav fs-6 text  ">
-
-                        <li class="nav-item ">
-                            <a class="nav-link " href="inicio.html">INICIO</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav fs-6 text">
+                        <li class="nav-item">
+                            <a class="nav-link" href="inicio.html">INICIO</a>
                         </li>
                         <li class="nav-item link-actived">
                             <a class="nav-link" href="nosotros.html">NOSOTROS</a>
@@ -70,17 +67,20 @@
         </nav>
     </header>
     <main>
+        <div class="portada-container">
+            <img src="/images/nosotros/portada.png" alt="Portada de InnovaTech Academy" class="portada">
+            <h2 class="titulo-destacado">Conócenos</h2>
+        </div>
         <div class="container">
-            <div class="portada-container">
-                <img src="/images/nosotros/portada.png" alt="Portada de InnovaTech Academy" class="portada">
-                <h2 class="titulo-destacado">Conócenos</h2>
-            </div>
             <div class="contenido">
-                <p>InnovaTech Academy es una empresa apasionada por la tecnología y la educación. Nos dedicamos a
-                    proporcionar cursos innovadores y de alta calidad en diversas áreas de la tecnología, desde
-                    desarrollo web y móvil hasta inteligencia artificial y ciencia de datos.</p>
-                <p>Nuestra misión es impulsar el crecimiento profesional de nuestros estudiantes y prepararlos para
-                    tener éxito en la industria tecnológica en constante evolución.</p>
+                <div class="card">
+                    <h3>¿Quienes Somos?</h3>
+                    <p>InnovaTech Academy es una empresa apasionada por la tecnología y la educación. Nos dedicamos a
+                        proporcionar cursos innovadores y de alta calidad en diversas áreas de la tecnología, desde
+                        desarrollo web y móvil hasta inteligencia artificial y ciencia de datos.</p>
+                    <p>Nuestra misión es impulsar el crecimiento profesional de nuestros estudiantes y prepararlos para
+                        tener éxito en la industria tecnológica en constante evolución.</p>
+                </div>
             </div>
             <div class="mision-vision">
                 <div class="mision card">
@@ -111,110 +111,177 @@
                     </ul>
                 </div>
             </div>
-            <main>
-                <div class="impacto-social">
+            <div class="impacto-social">
+                <div class="card">
                     <h3>Impacto Social</h3>
                     <p>Estamos comprometidos con el desarrollo social y económico de nuestra comunidad. A través de
                         diversas iniciativas, buscamos hacer una diferencia positiva en la vida de las personas y
                         contribuir al bienestar general. InnovaTech Academy no solo se enfoca en la formación
                         tecnológica de alta calidad, sino también en la responsabilidad social. Algunas de nuestras
                         iniciativas incluyen:</p>
-                    <div class="card">
-                        <ul>
-                            <li><strong>Programas de inclusión digital:</strong> Ofrecemos talleres gratuitos de
-                                introducción a la programación y uso de herramientas tecnológicas para comunidades
-                                desfavorecidas.</li>
-                            <li><strong>Colaboración con ONG's:</strong> Trabajamos de la mano con organizaciones no
-                                gubernamentales para llevar la educación tecnológica a zonas rurales y marginadas.</li>
-                            <li><strong>Voluntariado corporativo:</strong> Nuestros empleados participan en actividades
-                                de voluntariado, compartiendo su conocimiento y experiencia con jóvenes y adultos que
-                                buscan mejorar sus habilidades tecnológicas.</li>
-                            <li><strong>Apoyo a emprendedores:</strong> Organizamos eventos y talleres enfocados en el
-                                emprendimiento tecnológico, proporcionando las herramientas y el conocimiento necesario
-                                para que los emprendedores locales puedan desarrollar sus ideas y proyectos.</li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li><strong>Programas de inclusión digital:</strong> Ofrecemos talleres gratuitos de
+                            introducción a la programación y uso de herramientas tecnológicas para comunidades
+                            desfavorecidas.</li> 
+                        <li><strong>Colaboración con ONG's:</strong>Trabajamos de la mano con organizaciones no
+                            gubernamentales para llevar la educación tecnológica a zonas rurales y marginadas.</li>
+                        <li><strong>Voluntariado corporativo:</strong>Nuestros empleados participan en actividades
+                            de voluntariado, compartiendo su conocimiento y experiencia con jóvenes y adultos que
+                            buscan mejorar sus habilidades tecnológicas.</li>
+                        <li><strong>Apoyo a emprendedores:</strong> Organizamos eventos y talleres enfocados en el
+                            emprendimiento tecnológico, proporcionando las herramientas y el conocimiento necesario
+                            para que los emprendedores locales puedan desarrollar sus ideas y proyectos.</li>
+                    </ul>
                     <p>A través de estas acciones, InnovaTech Academy se esfuerza por cerrar la brecha digital y
                         proporcionar a más personas las habilidades necesarias para prosperar en el mundo tecnológico
                         actual.</p>
                 </div>
-
-
-                <div class="testimonios">
-                    <h3>Testimonios</h3>
-                    <div class="card">
-                        <div class="card-body">
-                            <p>"InnovaTech Academy cambió mi vida. Los cursos son increíblemente detallados y los
-                                instructores son verdaderos expertos." - Juan Pérez</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <p>"Gracias a InnovaTech Academy, ahora trabajo en una de las mejores empresas de
-                                tecnología. ¡Recomiendo sus cursos a todos!" - María López</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="becas-financiamiento">
+            </div>
+            
+            <div class="becas-financiamiento">
+                <div class="card">
                     <h3>Programas de Becas y Financiamiento</h3>
                     <p>En InnovaTech Academy, creemos firmemente que la educación debe ser accesible para todos,
                         independientemente de sus circunstancias económicas. Por eso, ofrecemos varios programas de
                         becas y opciones de financiamiento diseñados para apoyar a nuestros estudiantes en su camino
                         hacia el éxito. Algunas de nuestras iniciativas incluyen:</p>
-                    <div class="card">
-                        <ul>
-                            <li><strong>Beca Talento Innovador:</strong> Esta beca está dirigida a estudiantes con un
-                                rendimiento académico excepcional y un fuerte interés en carreras tecnológicas. Cubre
-                                hasta el 100% del costo del curso.</li>
-                            <li><strong>Beca de Inclusión:</strong> Orientada a mujeres y grupos subrepresentados en el
-                                campo de la tecnología, esta beca busca promover la diversidad y la inclusión en
-                                nuestras aulas.</li>
-                            <li><strong>Programas de financiamiento:</strong> Ofrecemos planes de pago flexibles que
-                                permiten a los estudiantes pagar sus cursos en cuotas accesibles, facilitando así su
-                                acceso a una educación de calidad sin comprometer su situación financiera.</li>
-                            <li><strong>Descuentos corporativos:</strong> Colaboramos con empresas para ofrecer
-                                descuentos especiales a sus empleados, fomentando así el desarrollo continuo y la
-                                capacitación dentro de la industria.</li>
-                            <li><strong>Becas para comunidades vulnerables:</strong> En asociación con diversas
-                                instituciones, otorgamos becas a personas de comunidades vulnerables, asegurando que más
-                                individuos tengan la oportunidad de formarse en el área tecnológica.</li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li><strong>Beca Talento Innovador:</strong> Esta beca está dirigida a estudiantes con un
+                            rendimiento académico excepcional y un fuerte interés en carreras tecnológicas. Cubre
+                            hasta el 100% del costo del curso.</li>
+                        <li><strong>Beca de Inclusión:</strong> Orientada a mujeres y grupos subrepresentados en el
+                            campo de la tecnología, esta beca busca promover la diversidad y la inclusión en
+                            nuestras aulas.</li>
+                        <li><strong>Programas de financiamiento:</strong> Ofrecemos planes de pago flexibles que
+                            permiten a los estudiantes pagar sus cursos en cuotas accesibles, facilitando así su
+                            acceso a una educación de calidad sin comprometer su situación financiera.</li>
+                        <li><strong>Descuentos corporativos:</strong> Colaboramos con empresas para ofrecer
+                            descuentos especiales a sus empleados, fomentando así el desarrollo continuo y la
+                            capacitación dentro de la industria.</li>
+                        <li><strong>Becas para comunidades vulnerables:</strong> En asociación con diversas
+                            instituciones, otorgamos becas a personas de comunidades vulnerables, asegurando que más
+                            individuos tengan la oportunidad de formarse en el área tecnológica.</li>
+                    </ul>
                     <p>Nuestros programas de becas y financiamiento están diseñados para garantizar que cada estudiante
                         tenga la oportunidad de acceder a una educación de alta calidad y avanzar en su carrera,
-                        independientemente de sus circunstancias económicas.</p>
-                    <p>Explora nuestras opciones y encuentra el apoyo que necesitas para alcanzar tus metas educativas y
+                        independientemente de sus circunstancias económicas.
+                        Explora nuestras opciones y encuentra el apoyo que necesitas para alcanzar tus metas educativas y
                         profesionales en InnovaTech Academy.</p>
                 </div>
-
-                <div class="eventos-actividades">
-                    <h3>Eventos y Actividades</h3>
-                    <div class="card">
-                        <div class="card-body">
-                            <h4>Hackathon Innovatech 2024</h4>
-                            <p>Únete a nuestro hackathon anual y demuestra tus habilidades de programación y resolución
-                                de problemas.</p>
+            </div>
+            <div class="tutores">
+                <div class="card card-main">
+                    <h3>Nuestros Tutores</h3>
+                    <p>En InnovaTech Academy, contamos con un equipo de tutores altamente capacitados y apasionados por la enseñanza. Ellos son expertos en sus respectivos campos y están comprometidos a proporcionar una educación de alta calidad a nuestros estudiantes. Aquí te presentamos algunos de los cursos disponibles y los tutores que los imparten:</p>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card card-tutor">
+                                <img src="/images/nosotros/kevin_beer.png" class="card-img-top" alt="Juan Pérez">
+                                <div class="card-body">
+                                    <h5 class="card-title">Juan Pérez</h5>
+                                    <p class="card-text"><strong>Programación:</strong> Desarrollador de software con más de 10 años de experiencia en diversas tecnologías y lenguajes de programación.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card card-tutor">
+                                <img src="/images/nosotros/erika_gonzalez.png" class="card-img-top" alt="María González">
+                                <div class="card-body">
+                                    <h5 class="card-title">María González</h5>
+                                    <p class="card-text"><strong>FrontEnd:</strong> Experta en desarrollo web con vasta experiencia en HTML, CSS, JavaScript y frameworks modernos como React y Vue.js.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card card-tutor">
+                                <img src="/images/nosotros/pedro_ramirez.png" class="card-img-top" alt="Pedro Ramírez">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pedro Ramírez</h5>
+                                    <p class="card-text"><strong>DevOps:</strong> Ingeniero DevOps certificado, con experiencia en la implementación de prácticas DevOps en varias empresas de tecnología de renombre.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card card-tutor">
+                                <img src="/images/nosotros/laura_martinez.png" class="card-img-top" alt="Laura Martínez">
+                                <div class="card-body">
+                                    <h5 class="card-title">Laura Martínez</h5>
+                                    <p class="card-text"><strong>Data Science:</strong> Científica de datos con un doctorado en informática y experiencia en análisis de datos, aprendizaje automático y visualización de datos.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h4>Conferencia de Inteligencia Artificial</h4>
-                            <p>Asiste a nuestra conferencia donde expertos en IA comparten las últimas tendencias y
-                                avances en el campo.</p>
+                    <p>Nuestros tutores están aquí para guiarte y apoyarte en cada paso de tu aprendizaje, asegurando que adquieras las habilidades necesarias para tener éxito en tu carrera tecnológica.</p>
+                </div>
+            </div>
+            <div class="eventos-actividades">
+                <div class="card">
+                <h3>Eventos y Actividades</h3>
+                    <h4>Hackathon Innovatech 2024</h4>
+                    <p>Únete a nuestro hackathon anual y demuestra tus habilidades de programación y resolución
+                        de problemas.</p>
+                    <h4>Conferencia de Inteligencia Artificial</h4>
+                    <p>Asiste a nuestra conferencia donde expertos en IA comparten las últimas tendencias y
+                        avances en el campo.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row my-">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Premios y Reconocimientos</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        Premio a la Innovación en Educación 2022
+                                        <img id="img" src="/images/nosotros/premio-innovacion.png" alt="Premio a la Innovación en Educación 2022" class="img-fluid mt-2 mb-3">
+                                    </li>
+                                    <li>
+                                        Mejor Academia Tecnológica 2023
+                                        <img id="img" src="/images/nosotros/mejor-academia.png" alt="Mejor Academia 2023" class="img-fluid mt-2 mb-3">
+                                    </li>
+                                    <li>
+                                        Reconocimiento por Excelencia Académica 2021
+                                        <img id="img" src="/images/nosotros/reconocimiento.png" alt="Reconocimiento por Excelencia Académica 2021" class="img-fluid mt-2 mb-3">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Testimonios</h3>
+                                <div class="mb-4">
+                                    <p>"InnovaTech Academy cambió mi vida. Los cursos son increíblemente detallados y los instructores son verdaderos expertos."</p>
+                                    <p class="fw-bold">- Juan Pérez</p>
+                                    <img id="img" src="/images/nosotros/juan.png" alt="Juan Perez" class="img-fluid">
+                                </div>
+                                <div class="mb-4">
+                                    <p>"Gracias a InnovaTech Academy, ahora trabajo en una de las mejores empresas de tecnología. ¡Recomiendo sus cursos a todos!"</p>
+                                    <p class="fw-bold">- María López</p>
+                                    <img id="img" src="/images/nosotros/maria.png" alt="Maria Lopez" class="img-fluid">
+                                </div>
+                                <div class="mb-4">
+                                    <p>"Estudiar en InnovaTech Academy ha sido una experiencia transformadora. Los cursos están diseñados para proporcionar conocimientos actualizados y relevantes, lo que me ha permitido estar al día con las últimas tendencias tecnológicas."</p>
+                                    <p class="fw-bold">- Luis Hernández</p>
+                                    <img id="img" src="/images/nosotros/luis.png" alt="Luis Hernández" class="img-fluid">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="premios-reconocimientos">
-                    <h3>Premios y Reconocimientos</h3>
-                    <ul>
-                        <li>Premio a la Innovación en Educación 2022</li>
-                        <li>Mejor Academia Tecnológica 2023</li>
-                        <li>Reconocimiento por Excelencia Académica 2021</li>
-                    </ul>
-                </div>
-        </div>
+            </div>
+    
     </main>
+    <!--Javascript-->
+    <script src="/js/nosotros.js"></script>
+    <!-- Boton de whatsapp -->
+    <a href="https://wa.me/64281417?text=Hola" class="float-wa" target="_blank">
+        <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
+    </a>
+</body>
+
     <footer class="bg-dark text-white mt-5 p-5 ">
         <div class="container ">
             <div class="row align-items-start justify-content-center ">
@@ -270,7 +337,9 @@
             </div>
         </div>
     </footer>
-
+ <!--Start of Tawk.to Script-->
+ <script type="text/javascript" src="../js/chat.js">
+</script>
+<!--End of Tawk.to Script-->
 </body>
-
 </html>
