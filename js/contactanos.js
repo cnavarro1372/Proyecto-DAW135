@@ -3,6 +3,11 @@ document.getElementById('btnEnviar').addEventListener('click', function() {
         title: "Enhorabuena!",
         text: "Formulario enviado con éxito!",
         icon: "success",
-        timer:  5000,
+        timer: 2000,
+        showConfirmButton: false  // Oculta el botón de confirmación
     });
+
+    setTimeout(function() {
+        window.location.href = 'contactanos.html';
+    }, 1000);
 });
