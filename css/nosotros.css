@@ -410,3 +410,17 @@ a:hover {
     }
 }
    
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 100px;
+    }
+    
+    .mision-vision {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .mision, .vision {
+        flex-basis: 100%;
+    }
+}

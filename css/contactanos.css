@@ -161,7 +161,7 @@ input, textarea {
     width: 60px;
     height: 60px;
     bottom: 40px;
-    right: 40px;
+    right: 25px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -190,6 +190,17 @@ input, textarea {
         grid-template-columns: 1fr;
     }
 }
+
+@media screen and (max-width:330px) {
+    .info-box{
+        width: 90%;
+        margin: auto;
+    }
+
+    .info-image img{
+        padding: 15%;
+    }
+ }
 
 /*Mensaje de envio con exito del formulario*/
 .success_message {
